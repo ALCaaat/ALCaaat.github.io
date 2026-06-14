@@ -12,7 +12,10 @@ permalink: /categories/
 {% assign posts = category[1] %}
 <section class="category-card">
   <div class="category-heading">
-    <h2 class="category-title">{{ category[0] }}</h2>
+    <div class="category-heading-main">
+      <h2 class="category-title">{{ category[0] }}</h2>
+      <span class="blog-tag">{{ category[0] }}</span>
+    </div>
     <span class="category-count">{{ posts.size }} 篇</span>
   </div>
   <ul class="category-posts">
