@@ -173,6 +173,12 @@
 }
 
 @media (max-width: 640px) {
+
+  .site-nav {
+    border: 0;
+    background: transparent;
+  }
+  
   .category-title-inline {
     flex-wrap: wrap;
     gap: 6px;
