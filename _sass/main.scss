@@ -2,6 +2,10 @@
   padding-top: 4px;
 }
 
+.site-nav-link + .site-nav-link {
+  margin-left: 18px;
+}
+
 .section-header {
   margin-bottom: 18px;
 }
@@ -168,6 +172,10 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 4px;
+  }
+
+  .site-nav-link + .site-nav-link {
+    margin-left: 14px;
   }
 
   .blog-card,
