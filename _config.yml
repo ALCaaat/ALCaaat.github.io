@@ -1,0 +1,19 @@
+title: ALCaaat
+description: 随便写点东西
+url: "https://ALCaaat.github.io"
+baseurl: ""
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+
+header_pages:
+  - about.md
+  - categories.md
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+exclude:
+  - README.md
