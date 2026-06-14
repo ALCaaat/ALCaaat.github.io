@@ -19,12 +19,7 @@ title: 首页
       {% endif %}
     </a>
     <div class="blog-content">
-      <div class="blog-topline">
-        <p class="blog-meta">{{ post.date | date: "%Y-%m-%d" }}</p>
-        {% if post.categories and post.categories.size > 0 %}
-          <span class="blog-tag">{{ post.categories[0] }}</span>
-        {% endif %}
-      </div>
+      <p class="blog-meta">{{ post.date | date: "%Y-%m-%d" }}</p>
       <h2 class="blog-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
       <p class="blog-summary">{{ summary }}</p>
       <p><a class="blog-link" href="{{ post.url | relative_url }}">继续阅读</a></p>
