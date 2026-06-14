@@ -18,10 +18,10 @@ permalink: /categories/
 {% assign posts = category[1] %}
 <section class="category-card">
   <div class="category-heading">
-    <h2 class="category-title">
+    <h2 class="category-title category-title-inline">
       <a class="category-link" href="{{ '/category/?name=' | relative_url }}{{ category[0] | uri_escape }}">{{ category[0] }}</a>
+      <span class="category-count">{{ posts.size }} 篇</span>
     </h2>
-    <p class="category-count">{{ posts.size }} 篇</p>
   </div>
   <ul class="category-posts">
   {% for post in posts limit:10 %}
