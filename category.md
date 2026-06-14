@@ -4,9 +4,13 @@ title: 分类详情
 permalink: /category/
 ---
 
-<h1 id="category-title">分类详情</h1>
-<p id="category-count"></p>
-<ul id="category-posts"></ul>
+<section class="category-card">
+  <div class="category-heading">
+    <h1 id="category-title" class="category-title">分类详情</h1>
+    <span id="category-count" class="category-count"></span>
+  </div>
+  <ul id="category-posts" class="category-posts"></ul>
+</section>
 
 <script>
   (function () {
