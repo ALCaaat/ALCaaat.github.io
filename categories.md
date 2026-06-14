@@ -1,23 +1,25 @@
 ---
-layout: page
-title: 分类
+layout: default
 permalink: /categories/
 ---
 
 {% assign categories = site.categories | sort %}
+
+<section class="page-section">
+  <header class="section-header">
+    <p class="section-kicker">Categories</p>
+    <h1 class="section-title">分类</h1>
+  </header>
 
 {% if categories.size > 0 %}
 <div class="category-list">
 {% for category in categories %}
 {% assign posts = category[1] %}
 <section class="category-card">
-  <div class="category-heading">
-    <div class="category-heading-main">
-      <h2 class="category-title">{{ category[0] }}</h2>
-      <span class="blog-tag">{{ category[0] }}</span>
-    </div>
-    <span class="category-count">{{ posts.size }} 篇</span>
-  </div>
+  <p class="category-count">{{ posts.size }} 篇</p>
+  <h2 class="category-title">
+    <a class="category-link" href="{{ '/category/?name=' | relative_url }}{{ category[0] | uri_escape }}">{{ category[0] }}</a>
+  </h2>
   <ul class="category-posts">
   {% for post in posts limit:3 %}
     <li>
@@ -33,3 +35,4 @@ permalink: /categories/
 {% else %}
 暂无分类。
 {% endif %}
+</section>
