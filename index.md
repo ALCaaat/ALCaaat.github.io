@@ -1,6 +1,5 @@
 ---
-layout: page
-title: 首页
+layout: default
 ---
 
 {% assign posts = site.posts %}
@@ -11,9 +10,13 @@ title: 首页
   {% assign summary = post.content | markdownify | strip_html | strip_newlines | replace: "  ", " " | truncate: 200 %}
   <article class="blog-card">
     <p class="blog-meta">{{ post.date | date: "%Y-%m-%d" }}</p>
-    <h2 class="blog-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <h2 class="blog-title">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h2>
     <p class="blog-summary">{{ summary }}</p>
-    <p><a class="blog-link" href="{{ post.url | relative_url }}">继续阅读</a></p>
+    <p class="blog-actions">
+      <a class="blog-link" href="{{ post.url | relative_url }}">继续阅读</a>
+    </p>
   </article>
 {% endfor %}
 </div>
