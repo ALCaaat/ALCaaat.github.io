@@ -9,16 +9,31 @@
   gap: 16px;
 }
 
+.site-title {
+  float: none;
+  margin: 0;
+  line-height: 1.2;
+}
+
 .site-nav {
   display: flex;
   align-items: center;
   gap: 18px;
   flex-wrap: wrap;
+  float: none;
+  line-height: 1.2;
+}
+
+.site-nav .page-link {
+  margin-left: 0;
 }
 
 .site-nav-link {
+  display: inline-flex;
+  align-items: center;
   color: #4b5563;
   font-size: 0.95rem;
+  line-height: 1.2;
   text-decoration: none;
 }
 
@@ -200,6 +215,11 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 8px;
+  }
+
+  .site-title,
+  .site-nav {
+    line-height: 1.2;
   }
 
   .site-nav {
