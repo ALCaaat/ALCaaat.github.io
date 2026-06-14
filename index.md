@@ -1,5 +1,6 @@
 ---
 layout: default
+body_class: home-page
 ---
 
 {% assign posts = site.posts %}
