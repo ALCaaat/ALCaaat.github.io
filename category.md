@@ -1,5 +1,6 @@
 ---
 layout: default
+title: 分类详情
 permalink: /category/
 ---
 
