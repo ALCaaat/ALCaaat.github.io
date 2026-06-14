@@ -8,10 +8,6 @@ theme: minima
 plugins:
   - jekyll-feed
 
-header_pages:
-  - about.md
-  - categories.md
-
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
